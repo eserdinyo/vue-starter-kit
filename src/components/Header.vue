@@ -20,7 +20,7 @@ export default {
     }
   },
   async created() {
-   const users = await this.$http.get('https://jsonplaceholder.typicode.com/users');
+   const users = await this.$http.get('users');
    console.log(users.data);
   }
 };
