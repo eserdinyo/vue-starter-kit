@@ -1,0 +1,53 @@
+.Header {
+  background-color: $color-black;
+  height: 80px;
+  position: relative;
+
+  &__hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: $primary-color;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      border-radius: 2px;
+      background: $primary-color;
+      transition: 0.3s;
+    }
+    &:before {
+      top: -9px;
+    }
+    &:after {
+      top: 9px;
+    }
+
+    &.active {
+      background: transparent;
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &:after {
+        top: 0;
+        transform: rotate(135deg);
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .Header {
+    &__hamburger {
+      display: none;
+    }
+  }
+}
