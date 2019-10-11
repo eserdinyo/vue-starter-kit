@@ -1,24 +1,17 @@
-# frontend
+# Vue Starter Kit
 
-## Project setup
-```
-yarn install
-```
+#### Used Tech
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+* Bootstrap 4 (Only CSS)
+* Font Awesome 5
+* Axios (Ready To Use)
+* Vue Router, Vuex
+* Ready To Use SCSS
 
-### Compiles and minifies for production
-```
-yarn build
-```
+#### Install
+`yarn install`
 
-### Lints and fixes files
-```
-yarn lint
-```
+#### Run
+`yarn serve`
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
