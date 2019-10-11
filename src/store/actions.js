@@ -3,7 +3,7 @@ import http from '@/http';
 
 export default {
     getUsers() {
-        http.get("https://jsonplaceholder.typicode.com/users").then(res => {
+        http.get("users").then(res => {
             console.log(res.data);
         });
     }
