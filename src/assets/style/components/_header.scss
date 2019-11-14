@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: 576px) {
+@include res(phone) {
   .Header {
     &__hamburger {
       display: none;
